@@ -8,10 +8,11 @@ namespace MvcDoll.Controllers
         // 
         // GET: /HelloWorld/
 
-        public string Index()
+        // I replace the index with the following code 
+        public IActionResult Index()
         {
-            return "This is my default action...";
-        }
+            return View();
+        } 
 
         // 
         // GET: /HelloWorld/Welcome/ 
