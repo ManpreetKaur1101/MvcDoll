@@ -14,3 +14,6 @@ In the next section in HelloWorldController class I replace my index method with
  I add a new folder under views folder with the name HelloWorld and then I add a new item index.cshtml under helloworld 
  in the next step i updated my content with the given code in tutorial.
 
+ I updated my  title index and  footer of the project with the new name and run my app after that in the Views/HelloWorld/Index.cshtml ,
+ in the next step i change my index and h2 with Doll List
+
