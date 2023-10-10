@@ -2,7 +2,8 @@
 Name: Manpreet kaur
 Student Id: 0812152
 
-My assigment first is on doll which I started by creating new project.Firstly, I added my readme and also add github repository.
+My assigment first is on doll which I started by creating new project.
+Firstly, I added my readme and also add github repository.
 Afterthat I followed all the steps of part1 for my project and run my project.
 
 In the part I add controller and changed its name by HelloworldConroller.
@@ -19,5 +20,31 @@ In the next section in HelloWorldController class I replace my index method with
  
  In HelloWorldController.cs, I changed the Welcome method to add a Message and NumTimes value to the ViewData dictionary.Afterthat I added new file under view/helloworld named welcome.cshtml
  and change the code then test my app .
+
+Date:10 october 2023 (adding a model)
+I am working on my part-4th in which I am adding a model firstly I add a model class under model folder and name the file as Doll.cs then
+I updated  the code of my file according to the tutorial also I  add new characteritics and attributes
+such as : Brand,Price,Id as my products requirement. add using statem,ents and examinbe
+
+In the following step,I added NuGetPackages from the tools menu.
+I selected Package Manager Console from the NuGet Package Manager then I run the command. 
+ 
+ surprisingly it shows error when i run command in my PMC at that point I was totally upset but then I rember our class lecture in which we faced same problem so
+ I followed the steps as we done before in the class and install new package version 3.1.0.
+
+ In the next step i added new folder name data and add new item called MvcDollContext.cs 
+ after that i changed the code but it is showing an error .....
+ I am wording on solving the error and finally,
+ wow..... its sloved by adding new public class.
+
+ Further I add using statements at the top of Startup.cs:
+ Furthermore,i updated the code in  Startup.ConfigureServices: also updated its name as my product name.
+
+ (examine the database connection string)
+ In the appsettings.json file i added a connection string.
+
+ (Scaffold movie page)
+
+
 
 
