@@ -16,11 +16,11 @@ namespace MvcDoll.Controllers
         // 
         // GET: /HelloWorld/Welcome/ 
 
-        public string Welcome()
+        // I updated my welcome message with the below code
+        public string Welcome(string name, int ID = 1)
         {
-            return "This is the Welcome action method...";
+            return HtmlEncoder.Default.Encode($"Hello {name}, ID: {ID}");
         }
 
-  
     }
 }
