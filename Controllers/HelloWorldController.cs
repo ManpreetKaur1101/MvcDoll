@@ -12,15 +12,19 @@ namespace MvcDoll.Controllers
         public IActionResult Index()
         {
             return View();
-        } 
+        }
 
         // 
         // GET: /HelloWorld/Welcome/ 
 
-        // I updated my welcome message with the below code
-        public string Welcome(string name, int ID = 1)
+        // I updated my welcome message with code provided in the tutorial
+        // Again I updated previous code and change the Welcome method to add a Message and NumTimes value to the ViewData dictionary.
+        public IActionResult Welcome(string name, int numTimes = 1)
         {
-            return HtmlEncoder.Default.Encode($"Hello {name}, ID: {ID}");
+            ViewData["Message"] = "Hello " + name;
+            ViewData["NumTimes"] = numTimes;
+
+            return View();
         }
 
     }
