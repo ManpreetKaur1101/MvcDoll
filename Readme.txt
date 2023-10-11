@@ -47,6 +47,7 @@ I selected Package Manager Console from the NuGet Package Manager then I run the
  In the solution explorer ,I added new Scaffolded Item under controllers folder .Also,in Scaffold dialog I selected  MVC Controller with views, using Entity Framework > and select add.
  afterthat I completed the add controller dialog steps.further , in the PMC by using EF core migrations features I created and updated the database to the data model.
 
+ (Seed the database)-
 
 
 
