@@ -22,7 +22,7 @@ namespace MvcDoll.Controllers
         // GET: Dolls
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Movie.ToListAsync());
+            return View(await _context.Doll.ToListAsync());
         }
 
         // GET: Dolls/Details/5
@@ -33,7 +33,7 @@ namespace MvcDoll.Controllers
                 return NotFound();
             }
 
-            var doll = await _context.Movie
+            var doll = await _context.Doll
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (doll == null)
             {
@@ -73,7 +73,7 @@ namespace MvcDoll.Controllers
                 return NotFound();
             }
 
-            var doll = await _context.Movie.FindAsync(id);
+            var doll = await _context.Doll.FindAsync(id);
             if (doll == null)
             {
                 return NotFound();
@@ -124,7 +124,7 @@ namespace MvcDoll.Controllers
                 return NotFound();
             }
 
-            var doll = await _context.Movie
+            var doll = await _context.Doll
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (doll == null)
             {
@@ -139,15 +139,15 @@ namespace MvcDoll.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var doll = await _context.Movie.FindAsync(id);
-            _context.Movie.Remove(doll);
+            var doll = await _context.Doll.FindAsync(id);
+            _context.Doll.Remove(doll);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool DollExists(int id)
         {
-            return _context.Movie.Any(e => e.Id == id);
+            return _context.Doll.Any(e => e.Id == id);
         }
     }
 }

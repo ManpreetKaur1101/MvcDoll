@@ -5,11 +5,12 @@ namespace MvcDoll.Data
 {
     public class MvcDollContext : DbContext
     {
-        public MvcDollContext(DbContextOptions<MvcDollContext> options)
+        
+    public MvcDollContext(DbContextOptions<MvcDollContext> options)
             : base(options)
         {
         }
 
-        public DbSet<Doll> Movie { get; set; }
+        public DbSet<Doll> Doll { get; set; }
     }
 }
