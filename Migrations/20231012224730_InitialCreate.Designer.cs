@@ -10,7 +10,7 @@ using MvcDoll.Data;
 namespace MvcDoll.Migrations
 {
     [DbContext(typeof(MvcDollContext))]
-    [Migration("20231010232339_InitialCreate")]
+    [Migration("20231012224730_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -45,7 +45,7 @@ namespace MvcDoll.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Movie");
+                    b.ToTable("Doll");
                 });
 #pragma warning restore 612, 618
         }

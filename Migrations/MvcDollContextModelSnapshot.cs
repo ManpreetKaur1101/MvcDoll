@@ -43,7 +43,7 @@ namespace MvcDoll.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Movie");
+                    b.ToTable("Doll");
                 });
 #pragma warning restore 612, 618
         }

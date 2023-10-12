@@ -47,7 +47,15 @@ I selected Package Manager Console from the NuGet Package Manager then I run the
  In the solution explorer ,I added new Scaffolded Item under controllers folder .Also,in Scaffold dialog I selected  MVC Controller with views, using Entity Framework > and select add.
  afterthat I completed the add controller dialog steps.further , in the PMC by using EF core migrations features I created and updated the database to the data model.
 
- (Seed the database)-
+  Date-12 october 2023
+ (Seed the database)-I created a class called SeedData and added the data of my application in it.
+ After that i updated the startup.cs file and program.cs file and test the app
+ when i clicked the link to see the index page of data it shows an error and the error is about your DollContext is not defined then I examined my MVCDollContext.cs file then I noticed 
+ that there is Movie on one place that I never changed that with my product name  and i completed the next step with this mistake, which was i created a controller file and scaffolding item with that.
+ So I again did  my previous steps , deleted my migrations as well as DoolsController.cs page because my error was based on that 
+ steps so I created them again and after updating that pages I run my browser again then it worked .......happy.
+
+
 
 
 
