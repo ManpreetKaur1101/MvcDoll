@@ -29,7 +29,7 @@ such as : Brand,Price,Id as my products requirement. add using statem,ents and e
 In the following step,I added NuGetPackages from the tools menu.
 I selected Package Manager Console from the NuGet Package Manager then I run the command. 
  
- surprisingly it shows error when i run command in my PMC at that point I was totally upset but then I rember our class lecture in which we faced same problem so
+ surprisingly it shows an error when i run command in my PMC at that point I was totally upset but then I rember our class lecture in which we faced same problem so
  I followed the steps as we done before in the class and install new package version 3.1.0.
 
  In the next step i added new folder name data and add new item called MvcDollContext.cs 
@@ -72,6 +72,17 @@ I selected Package Manager Console from the NuGet Package Manager then I run the
  Firstly, I added a new Rating field in Model/Doll.cs afterthat I updated bind for both create and edit action in Dolls/Controller.cs.Moreover,I also update Rating field in all my templates inside views/Dolls
  then I changed my seeddata class so that it provides a value for new column in each new Doll .I also added migrations for new Rating column and run the browser to check the app and upto this its working well...............
 
+ part-9 (Add validation)
+ After adding validations rules to my Doll.cs file i run my app and try to create a link to add a new Doll and fill the form as invalides values which shows an error message.
+
+ part-10(Modifications)
+ I added new page name it as: About us,inside home page.In this i created view under the home folded and added file in it.Moreover,I modify the page and give a discription about my company.Afterthat I updated HomeController.cs
+ with new view then I run my app and it is working well............It shows the result of my About us page.
+
+
+
+
+ 
 
 
 
