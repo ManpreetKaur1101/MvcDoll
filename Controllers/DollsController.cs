@@ -20,17 +20,34 @@ namespace MvcDoll.Controllers
         }
 
         // GET: Dolls
-        public async Task<IActionResult> Index(string searchString)
+        // GET: Dolls
+        public async Task<IActionResult> Index(string dollBrand, string searchString)
         {
+            // Use LINQ to get list of Brands.
+            IQueryable<string> brandQuery = from m in _context.Doll
+                                            orderby m.Brand
+                                            select m.Brand;
+
             var dolls = from m in _context.Doll
                         select m;
 
-            if (!String.IsNullOrEmpty(searchString))
+            if (!string.IsNullOrEmpty(searchString))
             {
                 dolls = dolls.Where(s => s.Name.Contains(searchString));
             }
 
-            return View(await dolls.ToListAsync());
+            if (!string.IsNullOrEmpty(dollBrand))
+            {
+                dolls = dolls.Where(x => x.Brand == dollBrand);
+            }
+
+            var dollBrandVM = new DollBrandViewModel
+            {
+                Brands = new SelectList(await brandQuery.Distinct().ToListAsync()),
+                Dolls = await dolls.ToListAsync()
+            };
+
+            return View(dollBrandVM);
         }
         // GET: Dolls/Details/5
         public async Task<IActionResult> Details(int? id)

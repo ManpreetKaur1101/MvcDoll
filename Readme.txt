@@ -60,7 +60,9 @@ I selected Package Manager Console from the NuGet Package Manager then I run the
 
  part-7 (Add Search)
  I updated the index method inside Controllers/DollsController.cs, the index action method creates a LINQ query to select the dolls by creating a lambda expression.
- 
+ Further,I added a form inside Views/Dolls/Index.cshtml file.This HTML form tag uses the form tag helper so whenever we submit the form it will filter the string and save the changes and filter.
+ Afterthat,I added a class under model folder by name DollBrandViewModel.cs and made changes I updated my index method in DollsController.cs to search with the Brand column of my app
+ in that also I updated index.cshtml under Views/Dolls which will search the data by the brand column also.
 
 
 
