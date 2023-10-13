@@ -64,6 +64,15 @@ I selected Package Manager Console from the NuGet Package Manager then I run the
  Afterthat,I added a class under model folder by name DollBrandViewModel.cs and made changes I updated my index method in DollsController.cs to search with the Brand column of my app
  in that also I updated index.cshtml under Views/Dolls which will search the data by the brand column also.
 
+ I added [httpPost] index method and also added get method in views/Dolls/Index.cshtml.
+
+ part-8 (add a new field)
+ Date: 13 october 2023
+
+ Firstly, I added a new Rating field in Model/Doll.cs afterthat I updated bind for both create and edit action in Dolls/Controller.cs.Moreover,I also update Rating field in all my templates inside views/Dolls
+ then I changed my seeddata class so that it provides a value for new column in each new Doll .I also added migrations for new Rating column and run the browser to check the app and upto this its working well...............
+
+
 
 
 

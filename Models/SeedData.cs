@@ -27,7 +27,8 @@ namespace MvcDoll.Models
                     Categories = "Paper Doll",
                     Firstlaunch = DateTime.Parse("1990-08-04"),
                     Brand = "American Girl", // Based on cartoon theme
-                            Price = 75.85M
+                    Price = 75.85M,
+                    Rating ="Good"
                 },
 
                new Doll
@@ -36,7 +37,8 @@ namespace MvcDoll.Models
                    Categories = "Action Doll",
                    Firstlaunch = DateTime.Parse("1997-07-04"),
                    Brand = "Hosbro", // Speaks spanish and french
-                           Price = 76.89M
+                   Price = 76.89M,
+                   Rating = "Excellent"
                },
 
                  new Doll
@@ -45,7 +47,8 @@ namespace MvcDoll.Models
                      Categories = "Puppet",
                      Firstlaunch = DateTime.Parse("1966-09-04"),
                      Brand = "Mattel",
-                     Price = 123.99M
+                     Price = 123.99M,
+                     Rating = "well"
                  },
 
                  new Doll
@@ -54,7 +57,8 @@ namespace MvcDoll.Models
                      Categories = "African Doll",
                      Firstlaunch = DateTime.Parse("1975-08-04"),
                      Brand = "Corolle",
-                     Price = 90.99M
+                     Price = 90.99M,
+                     Rating = "Good"
                  },
                  new Doll
                  {
@@ -62,7 +66,8 @@ namespace MvcDoll.Models
                      Categories = "Corn Husk Doll",
                      Firstlaunch = DateTime.Parse("1955-11-04"),
                      Brand = "Barbie",
-                     Price = 77.99M
+                     Price = 77.99M,
+                     Rating = "Awesome"
                  },
                  new Doll
                  {
@@ -70,7 +75,8 @@ namespace MvcDoll.Models
                      Categories = "China Doll",
                      Firstlaunch = DateTime.Parse("1985-04-04"),
                      Brand = "Truly Me",
-                     Price = 87.99M
+                     Price = 87.99M,
+                     Rating = "VeryGood"
                  },
                  new Doll
                  {
@@ -78,7 +84,8 @@ namespace MvcDoll.Models
                      Categories = "sdf",
                      Firstlaunch = DateTime.Parse("1988-11-04"),
                      Brand = "Baby Alive",
-                     Price = 175.99M
+                     Price = 175.99M,
+                     Rating = "Awesome"
                  },
                  new Doll
                  {
@@ -86,7 +93,8 @@ namespace MvcDoll.Models
                      Categories = "Reborn Doll",       // Lovely doll that needs being cuddled just like the real one Cute......
                              Firstlaunch = DateTime.Parse("2000-04-04"),
                      Brand = "Jc Toys",
-                     Price = 123.99M
+                     Price = 123.99M,
+                     Rating = "Awesome+"
                  },
                  new Doll
                  {
@@ -94,7 +102,8 @@ namespace MvcDoll.Models
                      Categories = "Matryoshka Doll",
                      Firstlaunch = DateTime.Parse("2023-09-04"),
                      Brand = "Disney ",
-                     Price = 73.99M
+                     Price = 73.99M,
+                     Rating = "A"
                  },
                  new Doll
                  {
@@ -102,7 +111,8 @@ namespace MvcDoll.Models
                      Categories = "Bisque Doll",
                      Firstlaunch = DateTime.Parse("2023-09-04"),
                      Brand = "Nicklelodeon",    // christmas Holiday Dolls
-                             Price = 97.99M
+                     Price = 97.99M,
+                     Rating = "A++"
                  },
                 new Doll
                 {
@@ -110,7 +120,8 @@ namespace MvcDoll.Models
                     Categories = "Hopi Kachina Doll",
                     Firstlaunch = DateTime.Parse("2023-09-04"),
                     Brand = "Cocomelon",      // toys for preschoolers
-                            Price = 63.98M
+                    Price = 63.98M,
+                    Rating = "B"
                 }
 
             );

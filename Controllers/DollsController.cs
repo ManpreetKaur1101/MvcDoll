@@ -49,6 +49,11 @@ namespace MvcDoll.Controllers
 
             return View(dollBrandVM);
         }
+        [HttpPost]
+        public string Index(string searchString, bool notUsed)
+        {
+            return "From [HttpPost]Index: filter on " + searchString;
+        }
         // GET: Dolls/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -78,7 +83,7 @@ namespace MvcDoll.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Categories,Firstlaunch,Brand,Price")] Doll doll)
+        public async Task<IActionResult> Create([Bind("Id,Name,Categories,Firstlaunch,Brand,Price,Rating")] Doll doll)
         {
             if (ModelState.IsValid)
             {
@@ -110,7 +115,7 @@ namespace MvcDoll.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Categories,Firstlaunch,Brand,Price")] Doll doll)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Categories,Firstlaunch,Brand,Price,Rating")] Doll doll)
         {
             if (id != doll.Id)
             {
