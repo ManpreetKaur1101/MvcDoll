@@ -79,6 +79,8 @@ I selected Package Manager Console from the NuGet Package Manager then I run the
  I added new page name it as: About us,inside home page.In this i created view under the home folded and added file in it.Moreover,I modify the page and give a discription about my company.Afterthat I updated HomeController.cs
  with new view then I run my app and it is working well............It shows the result of my About us page.
 
+ I added css to make  web pages more attractive........
+
 
 
 
