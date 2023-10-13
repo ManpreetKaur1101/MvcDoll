@@ -20,11 +20,18 @@ namespace MvcDoll.Controllers
         }
 
         // GET: Dolls
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Doll.ToListAsync());
-        }
+            var dolls = from m in _context.Doll
+                        select m;
 
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                dolls = dolls.Where(s => s.Name.Contains(searchString));
+            }
+
+            return View(await dolls.ToListAsync());
+        }
         // GET: Dolls/Details/5
         public async Task<IActionResult> Details(int? id)
         {

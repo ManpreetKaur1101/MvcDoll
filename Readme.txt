@@ -53,7 +53,14 @@ I selected Package Manager Console from the NuGet Package Manager then I run the
  when i clicked the link to see the index page of data it shows an error and the error is about your DollContext is not defined then I examined my MVCDollContext.cs file then I noticed 
  that there is Movie on one place that I never changed that with my product name  and i completed the next step with this mistake, which was i created a controller file and scaffolding item with that.
  So I again did  my previous steps , deleted my migrations as well as DoolsController.cs page because my error was based on that 
- steps so I created them again and after updating that pages I run my browser again then it worked .......happy.
+ steps so I created them again and after updating that pages I run my browser again then it worked .......happy after solving error wow......
+
+ part-6 (controller action and views)
+ I examined controller methods and views and continue working on my further steps.
+
+ part-7 (Add Search)
+ I updated the index method inside Controllers/DollsController.cs, the index action method creates a LINQ query to select the dolls by creating a lambda expression.
+ 
 
 
 
